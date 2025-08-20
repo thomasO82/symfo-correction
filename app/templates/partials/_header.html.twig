@@ -1,0 +1,36 @@
+<header class="bg-gray-900 text-gray-100 shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        
+        <!-- Logo -->
+        <h1 class="text-2xl font-bold tracking-wide">
+            <a href="/" class="text-white hover:text-blue-400 transition-colors">TetedeLivre</a>
+        </h1>
+
+        <nav class="hidden md:flex">
+            <ul class="flex space-x-6 text-sm font-medium">
+                <li><a href="/" class="hover:text-blue-400 transition-colors">Home</a></li>
+                <li><a href="/about" class="hover:text-blue-400 transition-colors">About</a></li>
+                <li><a href="/contact" class="hover:text-blue-400 transition-colors">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="md:hidden">
+            <button id="mobile-menu-button" class="focus:outline-none">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
+        <ul class="flex flex-col px-6 py-4 space-y-3 text-sm font-medium">
+            <li><a href="/" class="hover:text-blue-400 transition-colors">Home</a></li>
+            <li><a href="/about" class="hover:text-blue-400 transition-colors">About</a></li>
+            <li><a href="/contact" class="hover:text-blue-400 transition-colors">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+

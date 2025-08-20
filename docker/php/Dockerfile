@@ -3,8 +3,8 @@ FROM php:8.3-fpm
 
 # Installe les dépendances système
 RUN apt-get update && apt-get install -y \
-    git unzip libicu-dev libpq-dev libzip-dev zip libpng-dev \
-    && docker-php-ext-install intl pdo pdo_mysql opcache zip
+    git nodejs npm unzip libicu-dev libpq-dev libzip-dev zip libpng-dev \
+    && docker-php-ext-install intl pdo pdo_mysql opcache zip 
 
 RUN curl -sS https://get.symfony.com/cli/installer | bash \
     && mv /root/.symfony*/bin/symfony /usr/local/bin/symfony
